@@ -114,7 +114,7 @@ export default function Contact() {
 
         {/* Two-column layout */}
         <div
-          className="reveal"
+          className="reveal responsive-grid"
           style={{ opacity:0, display:'grid', gridTemplateColumns:'1.4fr 1fr', gap:'24px', alignItems:'start' }}
         >
           {/* Form card */}

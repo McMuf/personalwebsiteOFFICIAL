@@ -11,6 +11,11 @@ export default function CustomCursor() {
   const [isDown,  setIsDown]  = useState(false)
   const [isHover, setIsHover] = useState(false)
   const [sparks,  setSparks]  = useState<SparkGroup[]>([])
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    setIsMobile(window.matchMedia('(hover: none), (pointer: coarse)').matches)
+  }, [])
 
   useEffect(() => {
     const onMove = (e: MouseEvent) => {
@@ -40,6 +45,8 @@ export default function CustomCursor() {
       document.removeEventListener('mouseup',    onUp)
     }
   }, [])
+
+  if (isMobile) return null
 
   const glowing = isDown || isHover
   const filterStr = isDown

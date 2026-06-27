@@ -122,7 +122,7 @@ export default function Projects() {
 
           {/* Main card */}
           <div
-            className="card-frame"
+            className="card-frame responsive-grid-projects"
             style={{
               display:'grid', gridTemplateColumns:'1.3fr 1fr', gap:'0',
               borderRadius:'12px', overflow:'hidden', minHeight:'360px',

@@ -8,6 +8,19 @@
   cursor: none !important;
 }
 
+@media (hover: none), (pointer: coarse) {
+  * { cursor: auto !important; }
+  .desktop-only { display: none !important; }
+}
+
+@media (max-width: 720px) {
+  .responsive-grid { grid-template-columns: 1fr !important; }
+  .responsive-grid-projects { grid-template-columns: 1fr !important; }
+  .responsive-grid-projects > a { min-height: 220px; }
+  .about-photo-wrap { width: 140px !important; height: 175px !important; }
+  .card-frame { padding: 20px !important; }
+}
+
 :root {
   --gold:       #c9a84c;
   --gold-dim:   #a8893a;

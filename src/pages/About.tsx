@@ -40,7 +40,7 @@ export default function About() {
 
         {/* Main card */}
         <div
-          className="reveal card-frame"
+          className="reveal card-frame responsive-grid"
           style={{
             opacity:0,
             display:'grid', gridTemplateColumns:'1fr 1.6fr', gap:'40px',
@@ -50,7 +50,7 @@ export default function About() {
           {/* Photo */}
           <div style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:'16px' }}>
             <div
-              className="animate-float"
+              className="animate-float about-photo-wrap"
               style={{
                 width:'200px', height:'250px', borderRadius:'8px', overflow:'hidden',
                 border:'1px solid rgba(201,168,76,0.25)',
